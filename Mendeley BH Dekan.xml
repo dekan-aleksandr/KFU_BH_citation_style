@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" et-al-min="2" default-locale="en-EN">
   <info>
-    <title>Стиль БХ ИФМИБ v6.0</title>
-    <id>http://csl.mendeley.com/styles/625359321/V6-1</id>
+    <title>Стиль БХ ИФМИБ v7.0</title>
+    <id>http://csl.mendeley.com/styles/625359321/BHstyleVersion7</id>
     <link href="http://www.zotero.org/styles/gost-r-7-0-5-2008" rel="self"/>
     <link href="https://github.com/dekan-alexander/KFU_BH_cytation_style" rel="documentation"/>
     <link href="http://protect.gost.ru/document.aspx?control=7&amp;id=173511" rel="documentation"/>
@@ -18,7 +18,7 @@
     <category citation-format="author-date"/>
     <category field="generic-base"/>
     <summary>Russian GOST-2008 style BH.</summary>
-    <updated>2021-06-08T09:41:58+00:00</updated>
+    <updated>2021-06-10T10:24:40+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <macro name="editor">
@@ -28,7 +28,7 @@
   </macro>
   <macro name="author">
     <names variable="author">
-      <name font-weight="bold" delimiter-precedes-last="always" et-al-min="1" initialize-with="." name-as-sort-order="all" sort-separator=" "/>
+      <name font-weight="bold" delimiter-precedes-last="always" et-al-min="1" initialize-with="." name-as-sort-order="all"/>
       <label form="short" plural="always" text-case="lowercase" prefix=" "/>
     </names>
   </macro>
@@ -57,9 +57,9 @@
     </choose>
   </macro>
   <macro name="title">
-    <text variable="title" suffix=" [Текст]"/>
+    <text variable="title" suffix=" [Text]"/>
     <names variable="author" prefix=" / " suffix=" // ">
-      <name et-al-min="18"/>
+      <name delimiter-precedes-last="always" et-al-min="18" initialize-with="." sort-separator=" "/>
     </names>
   </macro>
   <macro name="publisher">
@@ -81,7 +81,7 @@
     <text value="Z999"/>
   </macro>
   <macro name="citation-number">
-    <text variable="citation-number" suffix=". "/>
+    <text variable="citation-number" suffix=") "/>
   </macro>
   <citation et-al-min="2" et-al-use-first="1" disambiguate-add-year-suffix="true">
     <sort>
